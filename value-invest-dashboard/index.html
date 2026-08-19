@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>价值投资 · 中长线决策台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">价</div>
+        <div>
+          <div class="title">价值投资台</div>
+          <div class="sub">中长线 · 决策原型</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-item active" data-view="home"><span class="ic">🌡</span>市场冷热总览</div>
+        <div class="nav-item" data-view="macro"><span class="ic">📈</span>宏观资产走势</div>
+        <div class="nav-item" data-view="dividend"><span class="ic">💰</span>红利股 Top50</div>
+        <div class="nav-item" data-view="margin"><span class="ic">🛡</span>安全边际测算</div>
+        <div class="nav-item" data-view="holdings"><span class="ic">📒</span>我的持仓</div>
+        <div class="nav-item" data-view="lazy"><span class="ic">🤖</span>懒人跟投</div>
+      </nav>
+      <div class="side-foot">
+        数据：沪深300 / 科创50 / 黄金为通达信真实行情；标普500 / 美债 / 红利榜 / 测算为示例。<br/>估值分位 / 基金为示例映射。<br/>原型 v0.2
+      </div>
+    </aside>
+    <main class="main" id="view"></main>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
